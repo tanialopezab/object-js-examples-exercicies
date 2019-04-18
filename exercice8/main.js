@@ -1,25 +1,37 @@
 'use strict';
 console.log('hola');
 
-
-//selecciono un estado del select y al pulsar el boton se pinta la cara feliz o la cara triste y se elige un numero aleatorio jasta 100 y si es par se pone un color amarillo de fondo y si no se pone el naranja
-
-//Recojo los elementos html(contenedor, select y boton)
-//poner listener al boton
-//crear la funcion handler; recogera el estado del select y lo pinta en pantalla
+ 
 const selectElement = document.getElementById('mood');
-const buttonElement = document.querySelector('.btn');
-const faceElement = document.querySelector('.container__face');
-const backgroundElement = document.querySelector('.main__page');
+const buttonElement = document.querySelector('.mood__btn');
+const faceElement = document.querySelector('.face');
+const backgroundElement = document.querySelector('.body__mood');
+let randomNumber = getRandomNumber(100);
+
+
+function getRandomNumber(max) {       
+    return Math.ceil(Math.random() * max);
+  }   
+ console.log(randomNumber);
+
+function changeBackground (){
+    if(randomNumber%2 !== 0){
+        backgroundElement.classList.add('orange');
+        backgroundElement.classList.remove('yellow');
+    } else {
+        backgroundElement.classList.remove('orange');
+        backgroundElement.classList.add('yellow');
+    }
+}
 
 
 function buttonHandlerClick (){
-    console.log('click');
+   let moodSelected = selectElement.value;
+   faceElement.innerHTML = moodSelected;
+   
+   randomNumber = getRandomNumber(100);
+   console.log(randomNumber);
+   changeBackground();
+
 }
-
 buttonElement.addEventListener('click',buttonHandlerClick );
-
-//generara un nummerp aleatorio si es par amarillo y si es impar naranja
-
-
-//diseño lo Ultimo

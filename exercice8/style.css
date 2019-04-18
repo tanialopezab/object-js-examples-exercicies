@@ -1,6 +1,45 @@
-body{
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background: pink;
+}
+/* SECCION PRINCIPAL */
+
+.main__mood {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.orange {
+    background-color: #ff9900;
+}
+.yellow {
+    background-color: yellow;
+}
+
+/* FACE */
+
+.face{
+    font-size: 80px;
+    font-weight: 800;
+    margin: 54px;
+}
+
+/* INPUT AND BUTTON */
+.container__elements{
+    position: absolute;
+    bottom: 0;
+    left:15vh;
+}
+.mood__label{
+    display:none;
+}
+.mood__select {
+    border: 0;
+    box-shadow: 0 0 4px rgba(0,0,0,3);
+    background: blue;
 }

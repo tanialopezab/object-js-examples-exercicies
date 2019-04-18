@@ -9,20 +9,33 @@
     <title>Mood</title>
 </head>
 
-<body class="main__page">
+<body class="body__mood">
 
-    <div class="container__face">
-        <h1 class="face">:)</h1>
-    </div>
+<main class="main__mood">
 
-    <label for="mood">¿cómo te encuentras hoy?</label>
-    <select name="mood" id="mood">
-        <option value=":)">happy</option>
-        <option value=":(">sad</option>
-    </select>
-    <button class="btn" type="button">Update</button>
+        <div class="container__face">
+            <h1 class="face">:)</h1>
+        </div>
 
-    <script type="text/javascript" src="main.js"></script>
+ <div class="container__elements">
+
+        <label for="mood" class="mood__label">¿cual es tu humor hoy?</label>
+
+            <select name="mood" id="mood" class="mood__select">
+
+                <option value=":)">happy</option>
+                <option value=":(">sad</option>
+
+            </select>
+
+            <button class="mood__btn" type="button">Update</button>
+
+        </div>
+
+    </main>
+
+    <script src="main.js"></script>
+
 </body>
 
 </html>
