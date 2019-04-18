@@ -31,7 +31,7 @@ const rolePlayer = {
 
 }
 
-//Muestra por consola las propiedaddes del objeto 1 objeto 2 objeto 3
+//Muestra por consola las propiedades del objeto 1 objeto 2 objeto 3
 
 console.log(memberClub.name, memberClub.surname, memberClub.age, memberClub.sport, memberClub.memberGold);
 
