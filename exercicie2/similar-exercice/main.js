@@ -2,7 +2,7 @@
 
 console.log('hola');
 //CREO EL OBJETO CON SUS PROPIEDADES
-let precioCoche;
+let precioCoche;//variable que se incializa pero que se definirá con el valor que devuelva el método
 
 const coche = {
     marca: "renault",
@@ -14,12 +14,12 @@ const coche = {
         return precio;
     }    
 }
+//precioventa se crea DENTRO del objeto YA está relleno y se pone : como con las propiedades
 
 console.log(coche);
 
-//CREO EL METODO
-
 precioCoche = coche.precioventa(3000);
+//aqui llamo a la funcion del metodo y lo que me devuelve lo meto en una variable que he inicializado arriba
 
 console.log(coche.marca, coche.añoMatrícula, coche.color, coche.kilometros, precioCoche);
 
